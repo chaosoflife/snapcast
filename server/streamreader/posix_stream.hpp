@@ -43,7 +43,6 @@ public:
 protected:
     void connect() override;
     void do_disconnect() override;
-    void do_read() override;
     std::string lastException_;
     size_t dryout_ms_;
     int idle_bytes_;
