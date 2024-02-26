@@ -180,7 +180,7 @@ void AsioStream<ReadStream>::do_read()
                             {
         if (ec)
         {
-            LOG(ERROR, "AsioStream") << "Error reading message: " << ec.message() << ", length: " << length << "\n";
+            // LOG(ERROR, "AsioStream") << "Error reading message: " << ec.message() << ", length: " << length << "\n";
             connect();
             return;
         }
